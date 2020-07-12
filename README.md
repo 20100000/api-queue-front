@@ -13,14 +13,19 @@ Back-and da aplicação test-brain-backend
     git clone https://github.com/20100000/test-brain-frontend.git<br/>
     cd test-brain-frontend
 </pre>
-<h4>2° Instale as dependências</h4>  
+<h4>2° Instale angular</h4> 
+instalação glogal 
+<pre>
+    npm install -g @angular/cli
+</pre>
+<h4>3° Instale as dependências</h4>  
 na raiz do projeto
 crie node_module com as dependências.<br/>
 <pre>
     npm install
 </pre>
 
-<h4>2° Start Projeto</h4>  
+<h4>4° Start Projeto</h4>  
 <pre>
     ng serve
 </pre>
