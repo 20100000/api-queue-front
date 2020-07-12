@@ -1,0 +1,14 @@
+<div [@routerTransition] class="login-page">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img class="user-avatar" src="assets/images/logo.png" width="150px" />
+            <h1>API QUEUE WS</h1>
+            <form role="form">
+                <a (click)="onLoggedin()" [routerLink]="['/product']" class="btn rounded-btn">{{
+                    'Log in' | translate
+                }}</a>
+                &nbsp;
+            </form>
+        </div>
+    </div>
+</div>

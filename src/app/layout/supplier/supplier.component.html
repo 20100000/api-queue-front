@@ -1,0 +1,54 @@
+<div [@routerTransition]>
+    <h2 class="text-muted">Fornecedores <small>cadastro</small></h2>
+    <div class="row">
+        <div class="col-md-9">
+            <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+                <fieldset class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Empresa </label>
+                            <input class="form-control" name="name"  placeholder="" ngModel/>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Documento </label>
+                            <input class="form-control" name="doc" placeholder="" ngModel/>
+                        </div>
+
+                    </div>
+                </fieldset>
+                <button class="btn btn-sm btn-primary pull-right" type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <small>Websocket</small>
+            <div class="card mb-12">
+                <div class="card-body table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Empresa</th>
+                            <th>Documento</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let item of data">
+                            <td>{{item.id}}</td>
+                            <td>{{item.name_supplier}}</td>
+                            <td>{{item.doc}}</td>
+                            <td>{{item.data_insert | date: 'dd/MM/yyyy H:m'}}</td>
+                            <td><a routerLink="../supplierr/{{item.id}}" href="#"><i title="Visualizar produtos" class="fa fa-eye"></i></a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

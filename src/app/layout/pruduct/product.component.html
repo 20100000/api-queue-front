@@ -1,0 +1,51 @@
+<div [@routerTransition]>
+    <h2 class="text-muted">Produtos <small>cadastro</small></h2>
+    <div class="row">
+        <div class="col-md-12">
+            <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)">
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Nome </label>
+                                <input class="form-control" name="name" placeholder="" ngModel minlength="1"  required/>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Descriçao </label>
+                                <input class="form-control" name="description" placeholder="" ngModel required/>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Fornecedor </label>
+                                <select class="form-control" name="supplier_id" placeholder="" ngModel required>
+                                    <option *ngFor="let opt of suppliers" [value]="opt.id">{{opt.name_supplier}}</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button class="btn btn-sm btn-primary pull-right" type="submit">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <small>websocket</small>
+            <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                    <th>nome</th>
+                    <th>Descrição</th>
+                    <th>Data</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let item of data">
+                    <td>{{item.name}}</td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.data_insert | date: 'dd/MM/yyyy H:m'}}</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
