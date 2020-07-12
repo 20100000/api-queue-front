@@ -10,8 +10,8 @@ Back-and da aplicação test-brain-backend
 <h3>Passo a passo para iniciar projeto 
 <h4>1° Clone o projeto</h4> 
 <pre>
-    git clone https://github.com/20100000/test-brain-frontend.git<br/>
-    cd test-brain-frontend
+    git clone https://github.com/20100000/api-queue-front.git<br/>
+    cd api-queue-front
 </pre>
 <h4>2° Instale angular</h4> 
 instalação glogal 
