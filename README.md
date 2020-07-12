@@ -30,14 +30,14 @@ crie node_module com as dependências.<br/>
     ng serve
 </pre>
 
-<h4>3° URL</h4>  
+<h4>4° URL</h4>  
 <pre>
     http://localhost:4200/login
 </pre>
 
-<h4>4° Use back-end da aplicação</h4>
+<h4>5° Use back-end da aplicação</h4>
 <pre>
-git clone https://github.com/20100000/test-brain-backend
+git clone https://github.com/20100000/api-queue.git
 </pre>
 Veja o manual do backend<br>
 
