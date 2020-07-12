@@ -30,19 +30,14 @@ crie node_module com as dependências.<br/>
     ng serve
 </pre>
 
-<h4>4° URL</h4>  
+<h4>5° URL</h4>  
 <pre>
     http://localhost:4200/login
 </pre>
 
-<h4>5° Use back-end da aplicação</h4>
+<h4>6° Use back-end da aplicação</h4>
 <pre>
 git clone https://github.com/20100000/api-queue.git
 </pre>
 Veja o manual do backend<br>
 
-Caso tenha esse problema: ERROR in The Angular Compiler requires TypeScript >=3.6.4 and <3.9.0 but 3.9.6 was found instead.
-
-<pre>
-    npm i typescript@3.8
-</pre>
